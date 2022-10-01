@@ -20,7 +20,7 @@ def look(username):
         
 to_be_sure = set()
     
-names = requests.get('https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt').text.splitlines()
+names = requests.get('https://raw.githubusercontent.com/danielmiessler/SecLists/master/Usernames/top-usernames-shortlist.txt').text.splitlines()
 for line in names:
     to_be_sure.add(line.strip())
 
